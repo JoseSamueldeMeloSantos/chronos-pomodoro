@@ -1,26 +1,31 @@
 import './styles/theme.css'
 import './styles/global.css'
-import { Heading } from './components/Heading'
-import { TimerIcon } from 'lucide-react'
-
-
+import { Container } from './components/Container'
 
 //componente do react e uma funcao 
 export function App() {//usa o nome da classe
     return (//so permite retornar um elemento pai(usando a tag vazia vc evita essa obrigatoriedade)
         
         <>
-            {/* usando atributo normal(na tag) e childens(dentro da tag) */}
-            <Heading>
-                ola mundo
-                <button>
-                    <TimerIcon/>
-                </button>
-            </Heading>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus ea vel, 
-                esse doloremque modi. Esse tenetur, sint dolor, rerum quae aliquid veritatis 
-                minus alias, laborum qui expedita ex totam?
-            </p>
+            <Container>
+                <section>Logo</section>
+            </Container>
+
+            <Container>
+                <section>Menu</section>
+            </Container>
+
+            <div className='container'>
+                <div className='content'>
+                    <section>FORM</section>
+                </div>
+            </div>
+
+            <div className='container'>
+                <div className='content'>
+                    <section>FOOTER</section>
+                </div>
+            </div>
         </>
     )
 }
