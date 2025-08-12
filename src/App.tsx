@@ -1,6 +1,10 @@
 import './styles/theme.css'
 import './styles/global.css'
 import { Container } from './components/Container'
+import { Logo } from './components/Logo'
+import { Menu } from './components/Menu'
+
+
 
 //componente do react e uma funcao 
 export function App() {//usa o nome da classe
@@ -8,24 +12,12 @@ export function App() {//usa o nome da classe
         
         <>
             <Container>
-                <section>Logo</section>
+                <Logo />
             </Container>
 
             <Container>
-                <section>Menu</section>
+                <Menu />
             </Container>
-
-            <div className='container'>
-                <div className='content'>
-                    <section>FORM</section>
-                </div>
-            </div>
-
-            <div className='container'>
-                <div className='content'>
-                    <section>FOOTER</section>
-                </div>
-            </div>
         </>
     )
 }
