@@ -3,13 +3,12 @@ import './styles/global.css'
 import { Container } from './components/Container'
 import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
-
+import { CountDown } from './components/CountDown'
 
 
 //componente do react e uma funcao 
 export function App() {//usa o nome da classe
     return (//so permite retornar um elemento pai(usando a tag vazia vc evita essa obrigatoriedade)
-        
         <>
             <Container>
                 <Logo />
@@ -17,6 +16,10 @@ export function App() {//usa o nome da classe
 
             <Container>
                 <Menu />
+            </Container>
+
+            <Container>
+                <CountDown />
             </Container>
         </>
     )
