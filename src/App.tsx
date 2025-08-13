@@ -26,7 +26,7 @@ export function App() {//usa o nome da classe
             <Container>
                 <form className='form'>{/*É o container principal de um formulário.Agrupa campos de entrada, botões e outros elementos.*/}
                     <div className='formRow'>
-                      <DefaultInput labelText='qualquerCoisa' id='meuInput' type='string' />
+                      <DefaultInput labelText='qualquerCoisa' id='meuInput' type='string' title='Titulo' placeholder='Digite algo'/>
                     </div>
 
                     <div className="formRow">
