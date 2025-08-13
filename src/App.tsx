@@ -4,6 +4,7 @@ import { Container } from './components/Container'
 import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
+import { DefaultInput } from './components/DefaultInput'
 
 
 //componente do react e uma funcao 
@@ -25,9 +26,7 @@ export function App() {//usa o nome da classe
             <Container>
                 <form className='form'>{/*É o container principal de um formulário.Agrupa campos de entrada, botões e outros elementos.*/}
                     <div className='formRow'>
-                        {/*htmlFor e id tem que ser iguais*/}
-                        <label htmlFor='meuInput'>task</label>{/*Serve para identificar um campo de entrada.*/}
-                        <input id='meuInput' type='text' />{/*É o campo de entrada*/}
+                      <DefaultInput labelText='qualquerCoisa' id='meuInput' type='string' />
                     </div>
 
                     <div className="formRow">
