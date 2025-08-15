@@ -5,6 +5,7 @@ import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
 import { DefaultInput } from './components/DefaultInput'
+import { Cycles } from './components/Cycles/indes'
 
 
 //componente do react e uma funcao 
@@ -34,8 +35,7 @@ export function App() {//usa o nome da classe
                     </div>
 
                     <div className="formRow">
-                        <p>Ciclos</p>
-                        <p>0 0 0 0 0 0 0</p>
+                        <Cycles></Cycles>
                     </div>
 
                     <div className="formRow">
