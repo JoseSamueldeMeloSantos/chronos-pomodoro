@@ -8,6 +8,7 @@ export function Cycles () {
 
 
                 <div className={styles.cyclesDots}>
+                    {/*como colocar varios estilos em uma so classe(multi-classe)*/}
                     <span className={`${styles.cyclesDot} ${styles.workTime}`}></span>
                     <span className={`${styles.cyclesDot} ${styles.shortBreakTime}`}></span>
                     <span className={`${styles.cyclesDot} ${styles.workTime}`}></span>

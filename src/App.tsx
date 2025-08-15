@@ -6,7 +6,8 @@ import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
 import { DefaultInput } from './components/DefaultInput'
 import { Cycles } from './components/Cycles/indes'
-
+import { Button } from './components/DefaultButton'
+import {CirclePlay, StopCircleIcon} from 'lucide-react';
 
 //componente do react e uma funcao 
 export function App() {//usa o nome da classe
@@ -39,7 +40,8 @@ export function App() {//usa o nome da classe
                     </div>
 
                     <div className="formRow">
-                        <button>Enviar</button>
+                        <Button icon={<CirclePlay/>} color='green'/>
+                        <Button icon={<StopCircleIcon/>} color='red'/>
                     </div>                    
                 </form>
             </Container>
